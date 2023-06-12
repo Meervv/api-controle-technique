@@ -1,5 +1,5 @@
-async function parseData() {
-    const allData = await fetchData(departement);
+async function parseData(departement) {
+    const allData = await fetchData();
     
     let list_communes = []; // Tableau pour stocker les communes
     let garages_prix = {}; // Tableau pour stocker les prix
