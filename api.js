@@ -106,4 +106,4 @@ async function parseData() {
     };
 }
 
-console.log(parseData().unique_communes);
+console.log(parseData().unique_communes[0]);
