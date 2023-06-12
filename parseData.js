@@ -1,5 +1,5 @@
 async function parseData() {
-    const allData = await fetchData();
+    const allData = await fetchData(departement);
     
     let list_communes = []; // Tableau pour stocker les communes
     let garages_prix = {}; // Tableau pour stocker les prix
@@ -13,7 +13,7 @@ async function parseData() {
     const unique_communes = new Set(); // Ensemble pour stocker les communes uniques
 
     for (let i = 0; i < allData.length; i++) {
-        if (allData[i].fields.cct_code_dept === "Ain") {
+        if (allData[i].fields.cct_code_dept === departement) {
             let commune = allData[i].fields.cct_code_commune; // Récupérer le nom de la commune
             let garage = allData[i].fields.cct_denomination;// Récupérer le nom du garage
             let prix = allData[i].fields.prix_visite;
