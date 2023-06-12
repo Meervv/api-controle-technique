@@ -248,6 +248,7 @@ async function processData() {
     catch (error) {
         console.log(error);
     }
+    console.log(sortedCommunes)
 }
 processData();
 
