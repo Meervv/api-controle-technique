@@ -1,0 +1,84 @@
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        font-size: 12px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    th {
+        font-weight: 800;
+        text-align: left;
+        padding: 8px;
+        border-bottom: none;
+    }
+    td {
+        padding: 8px;
+        border-bottom: 1px solid #ddd;
+    }
+    .garage-tr {
+            width: 20%;
+        }
+        .prix_th {
+            width: 5%;
+        }
+        .prixmax_th {
+            width: 7%;
+        }
+        .prixmin_th {
+            width: 7%;
+        }
+        .type-tr {
+            width: 30%;
+        }
+    @media screen and (max-width: 720px) {
+        table {
+            font-size: 12px;
+        }
+        th, td {
+            padding: 5px;
+        }
+        .commune_th {
+            width: 20%;
+        }
+        .garage_th {
+            width: 30%;
+        }
+        .prix_th {
+            width: 8%;
+        }
+        .prixmin_th, .prixmax_th, .type_th {
+            display: none;
+        }
+        .min-tr, .max-tr, .type-tr {
+            display: none;
+        }
+        .adresse-tr, .garage-tr {
+            font-size: 10px;
+        }
+    }
+    @media screen and (max-width: 600px) {
+        table {
+            font-size: 11px;
+        }
+        th, td {
+            padding: 5px;
+        }
+        .commune_th {
+            width: 25%;
+        }
+        .garage_th {
+            width: 30%;
+        }
+        .prix_th {
+            width: 8%;
+        }
+        .prixmin_th, .prixmax_th, .type_th {
+            display: none;
+        }
+        .min-tr, .max-tr, .type-tr {
+            display: none;
+        }
+        .adresse-tr, .garage-tr {
+            font-size: 10px;
+        }
+    }
