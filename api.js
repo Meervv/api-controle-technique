@@ -48,7 +48,7 @@ async function parseData() {
     const unique_communes = new Set(); // Ensemble pour stocker les communes uniques
 
     for (let i = 0; i < allData.length; i++) {
-        if (allData[i].fields.cct_code_dept === "{{wf {&quot;path&quot;:&quot;name&quot;,&quot;type&quot;:&quot;PlainText&quot;\} }}") {
+        if (allData[i].fields.cct_code_dept === "Eure") {
             let commune = allData[i].fields.cct_code_commune; // Récupérer le nom de la commune
             let garage = allData[i].fields.cct_denomination;// Récupérer le nom du garage
             let prix = allData[i].fields.prix_visite;
