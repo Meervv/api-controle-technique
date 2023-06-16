@@ -1,6 +1,6 @@
 async function fetchData() {
     try {
-        let rows = 500;
+        let rows = 1000;
         let start = 0;
         let apiUrl = `https://data.economie.gouv.fr/api/records/1.0/search/?dataset=controle_techn&q=&rows=${rows}&start=${start}&facet=cct_code_dept&facet=code_postal&facet=cct_code_commune&facet=cct_denomination&facet=cat_vehicule_libelle&facet=cat_energie_libelle&facet=prix_visite&facet=prix_contre_visite_min&facet=prix_contre_visite_max`;
         let allData = []; // Tableau pour stocker toutes les données récupérées
